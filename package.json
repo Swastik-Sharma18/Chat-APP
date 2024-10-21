@@ -1,10 +1,10 @@
 {
-	"name": "chat-app-yt",
+	"name": "chat-app",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
 	"scripts": {
-		"server": "nodemon backend/server.js",
+		"server": "nodemon backend/server.js -e ts",
 		"start": "node backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
@@ -22,6 +22,7 @@
 		"socket.io": "^4.7.4"
 	},
 	"devDependencies": {
-		"nodemon": "^3.1.4"
+		"nodemon": "^3.1.7"
+		
 	}
 }
